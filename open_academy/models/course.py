@@ -10,7 +10,10 @@ class Course(models.Model):
     _description = 'Course Info'
 
     name = fields.Char(string='Title', required=True)
-    
+
+    name_test = fields.Char(string='Title', required=True)
+
+
     description = fields.Text(string='Description')
     
     level = fields.Selection(string='Level', 
